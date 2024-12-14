@@ -63,23 +63,57 @@ body {
     border-top: 5px solid #4CAF50; /* Green divider for separation */
 }
 
+/* Typing effect for hero title */
 .hero-title {
     font-size: 2.5em;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
 
 .hero-text {
     font-size: 1.2em;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3.5s steps(40) 2s forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing Effect Keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 /* Sections */
 .section {
     padding: 50px 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 .section-title {
     font-size: 2em;
     color: #4CAF50;
     margin-bottom: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(20) 0.5s forwards, blink 0.75s step-end infinite;
 }
 
 .bg-light {
@@ -119,4 +153,14 @@ body {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Fade-in effect for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

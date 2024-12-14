@@ -3,46 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. [Name]'s Dentistry Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            font-size: 2em;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #ddd;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Dr. Aishwarya Arya - Dentistry</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Welcome to Dr. [Name]'s Dentistry</header>
-    <section>
-        <h2>About Me</h2>
-        <p>I am Dr. [Name], a dedicated dentist specializing in [specialty].</p>
-        <h2>Services</h2>
-        <ul>
-            <li>Teeth Cleaning</li>
-            <li>Root Canals</li>
-            <li>Cosmetic Dentistry</li>
-        </ul>
-        <h2>Contact</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: +91 1234567890</p>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Dr. Aishwarya Arya</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Senior Lecturer | Endodontist</h2>
+            <p class="hero-text">Dedicated to providing the best dental care with expertise and compassion.</p>
+        </div>
     </section>
-    <footer>&copy; 2024 Dr. [Name]. All rights reserved.</footer>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am Dr. Aishwarya Arya, a Senior Lecturer at Awadh Dental College & Hospital, specializing in 
+                Conservative Dentistry & Endodontics. With a commitment to academic excellence and clinical expertise, 
+                I aim to bring the best dental care to my patients.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <ul>
+                <li><strong>BDS:</strong> College of Dental Sciences, Davangere, Karnataka</li>
+                <li><strong>MDS:</strong> MM College of Dental Sciences, Mullana, Haryana</li>
+                <li><strong>Achievements:</strong> Best Poster Award (World Dental Conference 2020), Best Paper Award (AIIMS, Delhi, 2022)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Clinical Skills</h2>
+            <ul>
+                <li>Root Canal Procedures</li>
+                <li>Esthetic and Cosmetic Dentistry</li>
+                <li>Surgical Endodontics - Apicoectomy</li>
+                <li>Extractions</li>
+                <li>Crown Preparations (Pfm-Zirconia-Emax)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:dr.aishwaryaendo@gmail.com">dr.aishwaryaendo@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919902970574">+91 9902970574</a></p>
+            <div class="buttons">
+                <a href="https://www.example.com/booking" target="_blank" class="button">Book a Slot</a>
+                <a href="https://www.instagram.com/your_instagram_profile" target="_blank" class="button">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Dr. Aishwarya Arya. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

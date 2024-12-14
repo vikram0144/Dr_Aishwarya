@@ -9,7 +9,7 @@ body {
 
 /* Header */
 .header {
-    background: #4CAF50;
+    background: #4CAF50; /* Green - Medical color for navbar */
     color: white;
     padding: 10px 0;
 }
@@ -17,17 +17,17 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav links */
-    align-items: center; /* Vertically center the navbar items */
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
-    margin: 0 auto; /* Center the navbar horizontally */
+    margin: 0 auto;
     padding: 0 20px;
 }
 
 .logo {
     font-size: 1.8em;
     font-weight: 500;
-    text-align: center; /* Ensure the logo is centered */
+    text-align: center;
 }
 
 .nav-links {
@@ -38,7 +38,7 @@ body {
 }
 
 .nav-links li {
-    margin-left: 30px; /* Increased spacing between links */
+    margin-left: 30px;
 }
 
 .nav-links a {
@@ -50,16 +50,17 @@ body {
 }
 
 .nav-links a:hover {
-    color: #45a049; /* Change color on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #45a049;
+    transform: scale(1.1);
 }
 
-/* Hero Section */
+/* Hero Section - Title Background */
 .hero {
-    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    background: #0288D1; /* Blue - Trust and calm medical color */
     color: white;
     text-align: center;
     padding: 50px 20px;
+    border-top: 5px solid #4CAF50; /* Green divider for separation */
 }
 
 .hero-title {

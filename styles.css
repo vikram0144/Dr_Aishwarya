@@ -14,6 +14,7 @@ body {
     padding: 10px 0;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -25,6 +26,7 @@ body {
 
 .logo {
     font-size: 1.8em;
+    font-weight: 500;
 }
 
 .nav-links {
@@ -35,17 +37,20 @@ body {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 30px; /* Increased spacing between links */
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #45a049; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 /* Hero Section */
@@ -97,10 +102,13 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
     background: #45a049;
+    transform: translateY(-3px);
 }
 
 /* Footer */
